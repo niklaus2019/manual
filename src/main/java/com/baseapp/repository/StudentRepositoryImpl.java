@@ -1,11 +1,14 @@
 package com.baseapp.repository;
 
 import com.baseapp.model.Student;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class StudentRepositoryImpl implements StudentRepository{
+@Repository("studentRepository")
+public class StudentRepositoryImpl implements StudentRepository {
+
     public List<Student> getStudents() {
 
         List<Student> students = new ArrayList<>();
